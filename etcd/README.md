@@ -1,4 +1,5 @@
 ``` shell
+git clone https://github.com/henszey/etcd-browser.git etcd-browser
 docker-compose up -d
 ```
 
