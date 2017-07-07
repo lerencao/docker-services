@@ -27,6 +27,7 @@ services:
       ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
   zk-web:
     image: tobilg/zookeeper-webui
+    restart: always
     ports:
       - 8888:8080
     environment:
@@ -35,6 +36,7 @@ services:
       - PASSWORD=admin
   kafka-manager:
     image: sheepkiller/kafka-manager:latest
+    restart: always
     ports:
       - "9000:9000"
     environment:
